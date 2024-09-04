@@ -1,6 +1,12 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 
-const goToLocation = (coordinates: Array<number>) => {
+// Named Tuple with optional member
+// const goToLocation = (
+//   coordinates: [latitude: number, longitude: number, elevation?: number],
+// ) => {};
+
+// Tuple with optional member
+const goToLocation = (coordinates: [number, number, number?]) => {
   const latitude = coordinates[0];
   const longitude = coordinates[1];
   const elevation = coordinates[2];
